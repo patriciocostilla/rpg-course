@@ -1,0 +1,10 @@
+     A                                      UNIQUE                    
+     A          R TWUSERR                                             
+     A            USID           6S 0       COLHDG('ID')              
+     A            USNAME        52A         COLHDG('NAME')            
+     A            USMAIL        52A         COLHDG('EMAIL')           
+     A            USBIO        255A         COLHDG('BIO')             
+     A                                      TEXT('BIOGRAFIA DEL USER')
+     A            USCRTS          Z                                   
+     A*                                                               
+     A          K USID                                                

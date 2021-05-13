@@ -1,0 +1,9 @@
+     A                                      UNIQUE             
+     A          R TWPOSTR                                      
+     A            POID           6S 0                          
+     A            POUSID    R               REFFLD(USID TWUSER)
+     A            POCONT       255A                            
+     A*                                                        
+     A            POCRTS          Z                            
+     A*                                                        
+     A          K POID                                         
