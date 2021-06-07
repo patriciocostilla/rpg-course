@@ -1,0 +1,32 @@
+     C           *INZSR    BEGSR
+     C           *ENTRY    PLIST
+     C                     PARM           INPUT   80
+     C                     PARM           BASE    20
+     C                     PARM           OUTPUT 27
+     C                     EXSR SRCHEK
+     C                     EXSR SRMAIN
+     C*          OUTPUT    DSPLY
+     C                     SETON                         LR
+     C                     ENDSR
+     C*
+     C           SRCHEK    BEGSR
+     C           INPUT     IFLT 0
+     C                     MULT -1        INPUT
+     C                     SETON                         50
+     C                     ENDIF
+     C                     ENDSR
+     C*
+     C           SRMAIN    BEGSR
+     C           INPUT     DOWGEBASE
+     C           INPUT     DIV  BASE      INPUT
+     C                     MVR            R       10
+     C                     MOVELR         RSTR    1
+     C           RSTR      CAT  OUTPUT    OUTPUT
+     C                     ENDDO
+     C                     MOVE INPUT     RSTR
+     C           RSTR      CAT  OUTPUT    OUTPUT
+     C           *IN50     IFEQ *ON
+     C           '-'       CAT  OUTPUT    OUTPUT
+     C                     ENDIF
+     C                     ENDSR
+     C* CALL DECTON PARM(X'00000000000000255F' X'008F')

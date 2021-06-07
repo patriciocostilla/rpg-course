@@ -1,0 +1,18 @@
+     C                     CALL 'DTVAL'
+     C                     PARM 00011230  DATE    80
+     C                     PARM -1        RES     10
+     C*
+     C           RES       IFEQ 0
+     C           'DATE OK' DSPLY
+     C                     ENDIF
+     C           RES       IFEQ 1
+     C           'YEAR'    DSPLY
+     C                     ENDIF
+     C           RES       IFEQ 2
+     C           'MONTH'   DSPLY
+     C                     ENDIF
+     C           RES       IFEQ 3
+     C           'DAY'     DSPLY
+     C                     ENDIF
+     C*
+     C                     SETON                         LR

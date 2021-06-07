@@ -1,0 +1,29 @@
+     C                     Z-ADD00010531  DATE    80
+     C                     Z-ADD0         RES     80
+     C*
+     C                     CALL 'DTSEP'
+     C                     PARM           DATE
+     C                     PARM           YEAR    40
+     C                     PARM           MONTH   20
+     C                     PARM           DAY     20
+     C*
+     C           YEAR      SUB  1         YEAR1   40
+     C           YEAR1     MULT 365       TEMP    80
+     C                     ADD  TEMP      RES
+     C*
+     C           YEAR1     DIV  4         TEMP
+     C                     ADD  TEMP      RES
+     C*
+     C           MONTH     SUB  1         MONTH1  20
+     C           1         DO   MONTH1    IDX     20
+     C                     CALL 'DTMDAY'
+     C                     PARM           IDX
+     C                     PARM           MDAY    20
+     C                     ADD  MDAY      RES
+     C                     ENDDO
+     C*
+     C                     ADD  DAY       RES
+     C                     SUB  1         RES
+     C*
+     C           RES       DSPLY
+     C                     SETON                         LR

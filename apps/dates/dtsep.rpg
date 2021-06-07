@@ -1,0 +1,31 @@
+     C           *ENTRY    PLIST
+     C                     PARM           DATE    80
+     C                     PARM           YEAR    40
+     C                     PARM           MONTH   20
+     C                     PARM           DAY     20
+     C*
+     C           DATE      IFLT 0
+     C                     MULT -1        DATE
+     C                     SETON                         50
+     C                     ENDIF
+     C*
+     C                     MOVE DATE      DATES   8
+     C           4         SUBSTDATES:1   YEARS   4
+     C           2         SUBSTDATES:5   MONTHS  2
+     C           2         SUBSTDATES:7   DAYS    2
+     C*
+     C                     MOVE YEARS     YEAR
+     C                     MOVE MONTHS    MONTH
+     C                     MOVE DAYS      DAY
+     C*
+     C           *IN50     IFEQ *ON
+     C                     MULT -1        YEAR
+     C                     MULT -1        DATE
+     C                     ENDIF
+     C*
+     C*          DATE      DSPLY
+     C*          YEAR      DSPLY
+     C*          MONTH     DSPLY
+     C*          DAY       DSPLY
+     C*
+     C                     SETON                         LR

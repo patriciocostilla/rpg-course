@@ -1,0 +1,26 @@
+     C           *ENTRY    PLIST
+     C                     PARM           DATE    80
+     C                     PARM           RES     10
+     C*
+     C                     CALL 'DTSEP'
+     C                     PARM           DATE
+     C                     PARM 0         YEAR    40
+     C                     PARM 0         MONTH   20
+     C                     PARM 0         DAY     20
+     C*
+     C                     Z-ADD0         RES
+     C*
+     C                     SELEC
+     C           YEAR      WHEQ 0
+     C                     Z-ADD1         RES
+     C*
+     C           MONTH     WHLT 1
+     C           MONTH     ORGT 12
+     C                     Z-ADD2         RES
+     C*
+     C           DAY       WHLT 1
+     C           DAY       ORGT 30
+     C                     Z-ADD3         RES
+     C                     ENDSL
+     C*
+     C                     SETON                         LR

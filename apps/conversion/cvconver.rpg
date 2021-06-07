@@ -1,0 +1,24 @@
+     C           *ENTRY    PLIST
+     C                     PARM           INPUT   8
+     C                     PARM           BASEI   20
+     C                     PARM           BASED   20
+     C                     Z-ADD*ZEROS    TEMP    80
+     C                     MOVE *BLANKS   OUTPUT 27
+     C* PASAR EL NUMERO A DECIMAL
+     C                     CALL 'CVNTODEC'
+     C                     PARM           INPUT
+     C                     PARM           BASEI
+     C                     PARM           TEMP
+     C* PASAR EL TEMPORAL AL OTRO SISTEMA DE NUMERACION
+     C                     CALL 'CVDECTON'
+     C                     PARM           TEMP
+     C                     PARM           BASED
+     C                     PARM           OUTPUT
+     C*
+     C           'ÑÑÑÑÑÑÑÑ'DSPLY
+     C           INPUT     DSPLY
+     C           BASEI     DSPLY
+     C           '--------'DSPLY
+     C           OUTPUT    DSPLY
+     C           BASED     DSPLY
+     C                     SETON                         LR

@@ -1,0 +1,41 @@
+     C           *INZSR    BEGSR
+     C           *ENTRY    PLIST
+     C                     PARM           INPUT   8
+     C                     PARM           BASE    20
+     C                     PARM           OUTPUT  80
+     C                     Z-ADD7         LIMIT   10
+     C                     MOVEL*BLANKS   C       1
+     C                     EXSR SRCHEK
+     C                     EXSR SRMAIN
+     C*          OUTPUT    DSPLY
+     C                     SETON                         LR
+     C                     ENDSR
+     C* SUBROUTINES
+     C           SRCHEK    BEGSR
+     C           1         SUBSTINPUT:1   C
+     C           C         IFEQ '-'
+     C                     SETON                         50
+     C                     SUB  1         LIMIT
+     C                     ENDIF
+     C                     ENDSR
+     C*
+     C           SRMAIN    BEGSR
+     C           0         DO   LIMIT     IDX     10
+     C                     SUBSTINPUT:8   C
+     C                     MOVE C         INT     10
+     C                     EXSR SRPOW
+     C           INT       MULT POW       TEMP    30
+     C                     ADD  TEMP      OUTPUT
+     C           C         CAT  INPUT     INPUT
+     C                     ENDDO
+     C           *IN50     IFEQ *ON
+     C                     MULT -1        OUTPUT
+     C                     ENDIF
+     C                     ENDSR
+     C*
+     C           SRPOW     BEGSR
+     C                     Z-ADD1         POW     80
+     C           1         DO   IDX
+     C                     MULT BASE      POW
+     C                     ENDDO
+     C                     ENDSR
