@@ -1,0 +1,13 @@
+     C                     Z-ADD00010101  DATE    80
+     C                     Z-ADD365       CANT    80
+     C*
+     C           1         DO   CANT      IDX     90
+     C                     CALL 'DTINCR1'
+     C                     PARM           DATE
+     C                     PARM           RES     80
+     C                     Z-ADDRES       DATE
+     C                     ENDDO
+     C*
+     C           RES       DSPLY
+     C*
+     C                     SETON                         LR

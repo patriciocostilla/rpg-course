@@ -1,0 +1,39 @@
+     C           *ENTRY    PLIST
+     C                     PARM           DATE    80
+     C                     PARM           DATEO   80
+     C*
+     C* INCORPORAR VALIDACIONES
+     C*
+     C                     CALL 'DTSEP'
+     C                     PARM           DATE
+     C                     PARM           YEAR    40
+     C                     PARM           MONTH   20
+     C                     PARM           DAY     20
+     C*
+     C                     CALL 'DTMDAY'
+     C                     PARM           YEAR
+     C                     PARM           MONTH
+     C                     PARM           LIMIT   20
+     C*
+     C                     ADD  1         DAY
+     C           DAY       IFGT LIMIT
+     C                     Z-ADD1         DAY
+     C                     ADD  1         MONTH
+     C                     ENDIF
+     C           MONTH     IFGT 12
+     C                     Z-ADD1         MONTH
+     C                     ADD  1         YEAR
+     C                     ENDIF
+     C*
+     C                     MOVE *BLANKS   DATEOS  8
+     C                     MOVE YEAR      YEARS   4
+     C                     MOVE MONTH     MONTHS  2
+     C                     MOVE DAY       DAYS    2
+     C*
+     C           DATEOS    CAT  YEARS:0   DATEOS
+     C           DATEOS    CAT  MONTHS:0  DATEOS
+     C           DATEOS    CAT  DAYS:0    DATEOS
+     C*
+     C                     MOVE DATEOS    DATEO
+     C*
+     C                     SETON                         LR
