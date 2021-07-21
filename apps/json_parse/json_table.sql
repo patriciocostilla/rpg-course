@@ -1,9 +1,14 @@
 select js.id, js.name, js.email
-from json_table('{
+from json_table('[{
     "id": 1, 
     "name": "John Doe", 
-    "email": "example@example.com"
-    }',
+    "email": "johndoe@example.com"
+    }, 
+    {
+    "id": 2, 
+    "name": "Mary Sue", 
+    "email": "marysue@example.com"
+    }]',
     'lax $' columns(
         id dec(1,0) path 'lax $.id',
         name varchar(20) path 'lax $.name',
