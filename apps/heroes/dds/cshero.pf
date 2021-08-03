@@ -1,0 +1,12 @@
+     A                                      UNIQUE
+     A          R CSHEROR
+     A            SHID           4P 0
+     A            SHNAME        30A
+     A            SHSECR        30A
+     A            SHBDAY          L
+     A*
+     A            SHPGM         10A
+     A            SHUSER        10A
+     A            SHDATE          Z
+     A*
+     A          K SHID
