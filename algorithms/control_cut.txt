@@ -1,0 +1,30 @@
+main() {
+    initialize totalizers
+    read file
+    initialize guards
+    while not end of file do {
+        control_cut()
+        process actual record
+        read file
+    }
+    execute top level cut
+    print totals
+}
+
+control_cut() {
+    if key_n != key_n_guard {
+        control_cut_n()
+    } else if key_n-1 != key_n-1_guard {
+        control_cut_n-1()
+    } else if {
+        ...
+    }
+}
+
+control_cut_n() {
+    control_cut_n-1()
+    print n-level totals
+    sum to n + 1 level totals
+    reinitialize n level totals
+    update n level guard
+}
