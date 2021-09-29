@@ -4,7 +4,7 @@ main() {
     initialize guards
     while not end of file do {
         control_cut()
-        process actual record
+        process current record
         read file
     }
     execute top level cut
