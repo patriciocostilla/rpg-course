@@ -1,0 +1,27 @@
+[Data Transfer File Description]
+FieldCount=4
+FileType=12
+ClientFileEncoding=UTF-8
+DataTransferVersion=1.0
+[Options]
+DateFormat=2
+DateSep=1
+DcmlSep=2
+TimeFormat=1
+TimeSep=1
+[F0001]
+Length=6
+Name=PTID
+Type=2
+[F0002]
+Length=25
+Name=PTIDEN
+Type=1
+[F0003]
+Length=2
+Name=PTGNID
+Type=2
+[F0004]
+Length=2
+Name=PTDMID
+Type=2
