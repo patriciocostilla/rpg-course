@@ -35,37 +35,36 @@
      C                     ENDSR
      C*
      C           SRLDAT    BEGSR
-     C           DATE      IFEQ 99991231
+     C           DATE      IFEQ 00010101
      C           'ERROR'   DSPLY
      C                     SETON                         01
      C                     ENDIF
      C                     ENDSR
      C*
      C           SRYEAR    BEGSR
-     C           MONTH     IFEQ 12
-     C           DAY       ANDEQ31
-     C                     ADD  1         YEAR
-     C                     Z-ADD1         MONTH
-     C                     Z-ADD1         DAY
+     C           MONTH     IFEQ 01
+     C           DAY       ANDEQ01
+     C                     SUB  1         YEAR
+     C                     Z-ADD12        MONTH
+     C                     Z-ADD31        DAY
      C                     SETON                         01
      C                     ENDIF
      C                     ENDSR
      C*
      C           SRMONT    BEGSR
+     C           DAY       IFEQ 1
+     C                     SUB  1         MONTH
      C                     CALL 'DTDAYQ'
      C                     PARM           YEAR
      C                     PARM           MONTH
      C                     PARM           DAYQ    20
-     C*
-     C           DAY       IFEQ DAYQ
-     C                     ADD  1         MONTH
-     C                     Z-ADD1         DAY
+     C                     Z-ADDDAYQ      DAY
      C                     SETON                         01
      C                     ENDIF
      C                     ENDSR
      C*
      C           SRDAY     BEGSR
-     C                     ADD  1         DAY
+     C                     SUB  1         DAY
      C                     ENDSR
      C*
      C           SRJOIN    BEGSR
