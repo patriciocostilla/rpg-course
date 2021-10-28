@@ -1,5 +1,5 @@
-     A* POKEMON_TYPES.CSV            
-                R PKIPKTR            
-                  PRPKID         5S 0
-                  PRTYID         5S 0
-                  PRSLOT         1S 0
+     A* POKEMON_TYPES.CSV                                        
+                R PKIPKTR                                        
+                  PPTPID         5S 0       COLHDG('PT. POKE ID')
+                  PPTTID         5S 0       COLHDG('PT. TYPE ID')
+                  PPTSLT         1S 0       COLHDG('PT. SLOT')   

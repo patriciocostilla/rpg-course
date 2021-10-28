@@ -11,13 +11,13 @@ TimeFormat=1
 TimeSep=1
 [F0001]
 Length=6
-Name=PRPKID
+Name=PPTPID
 Type=2
 [F0002]
 Length=6
-Name=PRTYID
+Name=PPTTID
 Type=2
 [F0003]
 Length=2
-Name=PRSLOT
+Name=PPTSLT
 Type=2

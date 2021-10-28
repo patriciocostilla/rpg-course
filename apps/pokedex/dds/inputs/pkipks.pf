@@ -1,10 +1,10 @@
-     A* POKEMON_SPECIES.CSV          
-                R PKIPKSR            
-                  PSID           5S 0
-                  PSIDEN        30A  
-                  PSGNID         5S 0
-                  PSEVFM         5S 0
-                  PSCOID         5S 0
-                  PSCRAT         5S 0
-                  PSILEG         1S 0
-                  PSIMYT         1S 0
+     A* POKEMON_SPECIES.CSV                                       
+                R PKIPKSR                                         
+                  PSID           5S 0       COLHDG('SP ID')       
+                  PSIDEN        30A         COLHDG('SP NAME')     
+                  PSGNID         5S 0       COLHDG('SP GEN')      
+                  PSEVFM         5S 0       COLHDG('SP EVO FROM') 
+                  PSCOID         5S 0       COLHDG('SP COLOR ID') 
+                  PSCRAT         5S 0       COLHDG('SP CAP RATE') 
+                  PSILEG         1S 0       COLHDG('SP IS LEGEND')
+                  PSIMYT         1S 0       COLHDG('SP IS MYTH')  

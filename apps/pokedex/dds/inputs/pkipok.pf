@@ -1,8 +1,8 @@
-     A* POKEMON.CSV                  
-                R PKIPOKR            
-                  ID             5S 0
-                  IDENT         30A  
-                  SPID           5S 0
-                  HEIGHT         5S 0
-                  WEIGHT         5S 0
-                  BEXP           5S 0
+     A* POKEMON.CSV                                                
+                R PKIPOKR                                          
+                  POID           5S 0       COLHDG('POKE ID')      
+                  POIDEN        30A         COLHDG('POKE NAME')    
+                  POSPID         5S 0       COLHDG('POKE SP ID')   
+                  POHEIG         5S 0       COLHDG('POKE HEIGHT')  
+                  POWEIG         5S 0       COLHDG('POKE WEIGHT')  
+                  POBEXP         5S 0       COLHDG('POKE BASE EXP')

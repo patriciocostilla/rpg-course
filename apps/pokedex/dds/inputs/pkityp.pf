@@ -1,6 +1,7 @@
-     A* TYPES.CSV                    
-                R PKITYPR            
-                  ID             5S 0
-                  IDENT         25A  
-                  GENID          1S 0
-                  DMGID          1S 0
+     A* TYPES.CSV                                                
+                R PKITYPR                                        
+                  PTID           5S 0       COLHDG('TYPE ID')    
+                  PTIDEN        25A         COLHDG('TYPE NAME')  
+                  PTGNID         1S 0       COLHDG('TYPE GEN ID')
+                  PTDMID         1S 0       COLHDG('TYPE DMG ID')
+                  
