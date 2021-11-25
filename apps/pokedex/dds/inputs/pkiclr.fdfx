@@ -1,0 +1,19 @@
+[Data Transfer File Description]
+FieldCount=2
+FileType=12
+ClientFileEncoding=UTF-8
+DataTransferVersion=1.0
+[Options]
+DateFormat=2
+DateSep=1
+DcmlSep=2
+TimeFormat=1
+TimeSep=1
+[F0001]
+Length=3
+Name=CLID
+Type=2
+[F0002]
+Length=10
+Name=CLNAME
+Type=1
